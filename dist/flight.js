@@ -105,7 +105,7 @@ export function installFlightMode({getModel,setActive}){
   document.addEventListener('keyup',event=>{keys.delete(event.code==='Space'||event.key===' '?'Space':event.key);if(active&&(ARROWS.has(event.key)||event.code==='Space'||event.key===' ')){event.preventDefault();event.stopImmediatePropagation();}},true);
   window.addEventListener('blur',()=>keys.clear());window.addEventListener('resize',resize);
 
-  function aim(){return {x:clamp(player.x+player.vx*.08,8,width-8),y:clamp(player.y+72+player.vy*.04,8,height-8)};}
+  function aim(){return {x:clamp(player.x+Math.sin(player.angle)*72+player.vx*.08,8,width-8),y:clamp(player.y-Math.cos(player.angle)*72+player.vy*.04,8,height-8)};}
   function dropBomb(time){
     if(time-lastBomb<280)return;
     lastBomb=time;const target=aim();bombs.push({x:player.x,y:player.y+12,target,started:time,duration:420});dropped++;updateHud();
