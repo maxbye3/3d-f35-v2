@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="82" viewBox="0 0 72 82" role="img" aria-label="SIRES">
+<defs><linearGradient id="b" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#101923"/><stop offset=".5" stop-color="#0e2d63"/><stop offset="1" stop-color="#0865f4"/></linearGradient></defs>
+<path d="M36 3C30 23 24 44 8 58L32 49 36 3Z" fill="url(#b)" stroke="#b9bec5" stroke-width=".5"/>
+<path d="M37 3C42 25 48 45 64 58L40 49 37 3Z" fill="url(#b)" stroke="#b9bec5" stroke-width=".5"/>
+<path d="M9 60 33 53 36 44 40 53 63 60 44 59 36 55 28 59Z" fill="#102440"/>
+<path d="M36 23 36 47 18 57 33 45Z" fill="white"/>
+<path d="M37 23 40 45 56 57 38 47Z" fill="white"/>
+<text x="9" y="76" font-family="Arial,sans-serif" font-weight="700" font-size="15" letter-spacing="-.8"><tspan fill="#0661ee">SI</tspan><tspan fill="#474d55">RES</tspan></text>
+</svg>

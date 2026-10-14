@@ -1,6 +1,6 @@
 # F-35B Assembly Explorer
 
-An interactive viewer for the separated F-35B model: **38 named assemblies and 103 editable component meshes**.
+An interactive viewer with a SIRES-inspired navy and blue interface, locally hosted Lato fonts, and the separated F-35B model: **38 named assemblies and 103 editable component meshes**.
 
 [Open the hosted viewer](https://f35b-assembly-explorer.steerbridge-8360.chatgpt.site) (access is private to its owner).
 
@@ -46,3 +46,5 @@ npm run check
 The viewer was checked in a browser for model loading, reassembly, animation, selection and isolation, labeled-render switching, and responsive layouts including a 390px viewport.
 
 Three.js is distributed under its MIT license in `dist/vendor/THREE-LICENSE.txt`. The aircraft assets originate from the user-supplied `F35-B.zip`; the Three.js license does not grant rights to those model assets.
+
+Lato is distributed under the SIL Open Font License in `dist/fonts/OFL.txt`. The SIRES-style vector mark is adapted from the user-provided design reference.
