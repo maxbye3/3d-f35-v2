@@ -49,3 +49,7 @@ The viewer was checked in a browser for model loading, reassembly, animation, se
 Three.js is distributed under its MIT license in `dist/vendor/THREE-LICENSE.txt`. The aircraft assets originate from the user-supplied `F35-B.zip`; the Three.js license does not grant rights to those model assets.
 
 Lato is distributed under the SIL Open Font License in `dist/fonts/OFL.txt`. The SIRES-style vector mark is adapted from the user-provided design reference.
+
+## Hidden flight mode
+
+With focus outside a text field, enter **↑ ↑ ↓ ↓ ← → ← → B A**. Arrow keys fly the F-35 and **Space** drops bombs onto page elements. Hits create debris and temporarily hide the struck element. **Escape** or **Exit & restore** restores every element and returns to the model viewer. All damage is local to the current browser session.
