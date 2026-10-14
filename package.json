@@ -1,0 +1,14 @@
+{
+  "name": "f35b-assembly-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive 3D viewer for the separated F-35B model",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check dist/app.js && node --check scripts/serve.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  }
+}

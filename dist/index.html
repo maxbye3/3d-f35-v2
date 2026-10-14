@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f4f5f0">
+<title>F-35B · Assembly Explorer</title><meta name="description" content="Explore the separated F-35B model in 3D. Rotate, reassemble, and inspect 38 named assemblies.">
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/"}}</script>
+</head>
+<body>
+<header class="header"><a class="brand" href="./" aria-label="F-35B Assembly Explorer home"><span class="mark">✳</span><strong>ASSEMBLY LAB</strong><span class="brand-separator"></span><span>F-35B</span></a><div class="header-right"><span class="project-type">MODEL STUDY / 001</span><details class="downloads"><summary>Download <span>↗</span></summary><div class="download-menu"><a href="./assets/F35B-exploded.glb" download>Exploded model <small>GLB · 23 MB</small></a><a href="./assets/F35B-assembled.glb" download>Assembled model <small>GLB · 23 MB</small></a><a href="./assets/exploded-preview.jpg" download>Labeled render <small>JPG</small></a></div></details></div></header>
+<main>
+<section class="viewer" aria-label="Interactive model viewer">
+<div class="viewer-heading"><div><p class="eyebrow">EXPLORE THE MODEL</p><h1>F-35B<span>.</span></h1><p class="intro">One aircraft. Every part in view.</p></div><div class="view-tabs" role="group" aria-label="View mode"><button id="three-tab" class="active" aria-pressed="true">3D explorer</button><button id="render-tab" aria-pressed="false">Labeled render</button></div></div>
+<div id="canvas-wrap"><div class="loading" id="loading" role="status"><span class="loading-cross">+</span><p id="loading-text">Loading the textured model…</p><div class="progress-track"><span id="progress"></span></div><small>Preparing 38 assemblies</small></div></div>
+<div id="render-view" hidden><img src="./assets/exploded-preview.jpg" alt="Labeled exploded view of the F-35B showing separated fuselage sections, wings, stabilizers, canopy, seat, landing gear, exhaust nozzle, and stores."></div>
+<div class="stage-info" id="stage-info"><span class="status-dot"></span><span id="view-state">EXPLODED VIEW</span><span class="coordinate">X / Y / Z</span></div>
+<div class="tools" id="tools"><button id="rotate" aria-label="Toggle automatic rotation" aria-pressed="false" title="Auto rotate">↻</button><button id="zoom-in" aria-label="Zoom in" title="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out" title="Zoom out">−</button><button id="reset-camera" aria-label="Reset camera" title="Reset camera">⌖</button></div>
+<div class="explosion-panel" id="explosion-panel"><div class="explosion-top"><label for="explode">Separation</label><output id="explode-value" for="explode">100%</output><button id="animate" aria-label="Animate assembly" aria-pressed="false">▶ <span>Animate</span></button></div><input id="explode" type="range" min="0" max="100" value="100" aria-label="Assembly separation percentage" disabled><div class="range-labels"><button id="assembled">Assembled</button><span>DRAG TO TAKE APART</span><button id="exploded" class="active">Exploded</button></div></div>
+<p class="interaction-hint" id="hint">Drag to orbit <span>·</span> Scroll to zoom <span>·</span> Click a part to inspect</p>
+</section>
+<aside class="sidebar"><div class="sidebar-top"><p class="eyebrow">COMPONENT INDEX</p><div class="index-title"><h2>38 assemblies</h2><span>103 meshes</span></div><div class="search"><span aria-hidden="true">⌕</span><input id="search" placeholder="Find a component…" aria-label="Search assemblies"><kbd>/</kbd></div></div>
+<div class="component-list" id="components" aria-label="Aircraft assemblies"><p class="list-placeholder">Loading components…</p></div>
+<div class="selection" id="selection"><div class="selection-heading"><span class="eyebrow" id="selection-eyebrow">SELECTED COMPONENT</span><button id="clear-selection" aria-label="Clear selection" hidden>×</button></div><h3 id="selected-name">Explore an assembly</h3><p id="selected-description">Select a part in the model or component index to highlight it.</p><div id="selection-actions" hidden><button id="focus-part">Focus view ↗</button><button id="isolate-part" aria-pressed="false">Isolate part</button></div></div>
+<div class="model-note"><span>MODEL NOTES</span><p>Built from the supplied model. Radar, avionics racks, and full engine internals are absent from the source.</p></div>
+</aside>
+</main>
+<footer><span><i></i> TEXTURED MODEL / 38 ASSEMBLIES</span><span>Exterior shell sections retain the original textures.</span></footer>
+<script type="module" src="./app.js"></script>
+</body></html>
