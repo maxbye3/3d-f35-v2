@@ -20,6 +20,7 @@ Open [localhost:8765](http://localhost:8765). Set `PORT` to use another port. Se
 - Move the separation slider between assembled and exploded views.
 - Animate assembly or toggle automatic rotation.
 - Search the component index, highlight an assembly, and focus or isolate it. Focus View pans and zooms smoothly over 0.5 seconds; dragging, zooming, or resetting interrupts the move. Reduced-motion preferences use an immediate focus.
+- Isolate Part sends the other assemblies outward in a 0.5-second explosion and centers the selected component. Show All Parts reverses the motion and restores the previous camera view. Switching components or clearing the selection also transitions smoothly.
 - Switch to the labeled render or download either GLB model.
 
 ## Editable model and assets
