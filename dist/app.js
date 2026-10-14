@@ -111,7 +111,7 @@ function updateFocus(time){
   const motion=focusMotion,progress=motion.duration===0?1:Math.min(1,Math.max(0,(time-motion.started)/motion.duration));
   const ease=progress*progress*(3-2*progress);
   // Follow the selected assembly if its separation is still animating.
-  const center=motion.object?new THREE.Box3().setFromObject(motion.object).getCenter(new THREE.Vector3()).sub(motion.group.isolationShift):motion.toTarget;
+  const center=motion.object?assemblyCenter(motion.group):motion.toTarget;
   const destination=motion.object?center.clone().addScaledVector(motion.direction,motion.distance):motion.toPosition;
   controls.target.lerpVectors(motion.fromTarget,center,ease);
   camera.position.lerpVectors(motion.fromPosition,destination,ease);camera.lookAt(controls.target);
