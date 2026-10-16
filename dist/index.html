@@ -23,7 +23,7 @@
 </header>
 <nav class="nav-rail" aria-label="Model views"><button id="rail-model" class="active" aria-label="3D explorer" aria-pressed="true" title="3D explorer"><svg><use href="#icon-cube"/></svg></button><button id="rail-render" aria-label="Labeled render" aria-pressed="false" title="Labeled render"><svg><use href="#icon-reference"/></svg></button></nav>
 <div class="workspace">
-<div class="utility-bar"><div class="model-context"><svg><use href="#icon-aircraft"/></svg><span>F-35B Model</span><span class="context-divider"></span><span>Separated Components</span></div><div class="utility-actions"><span class="metric-pill">Assemblies <b>38</b></span><span class="metric-pill">Component Meshes <b>103</b></span><details class="downloads"><summary><svg><use href="#icon-export"/></svg> Export</summary><div class="download-menu"><a href="./assets/F35B-exploded.glb" download>Exploded model <small>GLB · 23 MB</small></a><a href="./assets/F35B-assembled.glb" download>Assembled model <small>GLB · 23 MB</small></a><a href="./assets/exploded-preview.jpg" download>Labeled render <small>JPG</small></a></div></details></div></div>
+<div class="utility-bar"><div class="model-context"><svg><use href="#icon-aircraft"/></svg><span>F-35B Model</span><span class="context-divider"></span><span>Separated Components</span></div><div class="utility-actions"><span class="metric-pill">Assemblies <b>38</b></span><span class="metric-pill">Component Meshes <b>103</b></span><details class="downloads"><summary><svg><use href="#icon-export"/></svg> Export</summary><div class="download-menu"><a href="./assets/F35B-exploded.glb" download>Exploded model <small>GLB · 23 MB</small></a><a href="./assets/F35B-assembled.glb" download>Assembled model <small>GLB · 23 MB</small></a><a href="./assets/exploded-preview.jpg" download>Labeled render <small>JPG</small></a><p id="download-status" role="status" aria-live="polite" hidden></p></div></details></div></div>
 <div class="page-content">
 <section class="page-intro"><span class="intro-emblem"><svg><use href="#icon-aircraft"/></svg></span><div><h1>Assembly Explorer</h1><p>Inspect the separated F-35B model and explore how its components fit together.</p></div></section>
 <main>
@@ -40,5 +40,6 @@
 <div class="selection" id="selection"><div class="selection-heading"><span id="selection-eyebrow">Selected Component</span><button id="clear-selection" aria-label="Clear selection" hidden>×</button></div><h3 id="selected-name">Explore an assembly</h3><p id="selected-description">Select a part in the model or component index to highlight it.</p><div id="selection-actions" hidden><button id="focus-part">Focus View ↗</button><button id="isolate-part" aria-pressed="false">Isolate Part</button></div></div>
 <div class="model-note"><span>Model Notes</span><p>Radar, avionics racks, and full engine internals are absent from the supplied model.</p></div></aside>
 </main></div></div>
+<script type="module" src="./downloads.js"></script>
 <script type="module" src="./app.js"></script>
 </body></html>

@@ -6,7 +6,7 @@
   "description": "Interactive 3D viewer for the separated F-35B model",
   "scripts": {
     "dev": "node scripts/serve.mjs",
-    "check": "node --check dist/app.js && node --check dist/flight.js && node --check scripts/serve.mjs"
+    "check": "node --check dist/app.js && node --check dist/flight.js && node --check dist/downloads.js && node --check scripts/serve.mjs"
   },
   "dependencies": {
     "three": "0.180.0"
