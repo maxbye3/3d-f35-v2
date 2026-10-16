@@ -2,7 +2,15 @@
 
 An interactive viewer with a SIRES-inspired navy and blue interface, locally hosted Lato fonts, and the separated F-35B model: **38 named assemblies and 103 editable component meshes**.
 
-[Open the hosted viewer](https://f35b-assembly-explorer.steerbridge-8360.chatgpt.site) (access is private to its owner).
+[Open the public viewer on GitHub Pages](https://maxbye.co/3d-f35-v2/).
+
+The [original hosted viewer](https://f35b-assembly-explorer.steerbridge-8360.chatgpt.site) remains private to its owner.
+
+## GitHub Pages
+
+The `Deploy viewer to GitHub Pages` workflow publishes `dist/` whenever `main` changes, after running the JavaScript checks. It can also be run manually from the Actions tab. No dependency installation or build step is needed; the models, fonts, and Three.js modules are included in `dist/`.
+
+The repository's Pages publishing source is **GitHub Actions**. Asset URLs are relative, so the viewer works under `/3d-f35-v2/`. The address `https://maxbye3.github.io/3d-f35-v2/` redirects to the account's existing custom domain above.
 
 ## Run locally
 
